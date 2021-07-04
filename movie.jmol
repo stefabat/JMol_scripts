@@ -1,0 +1,15 @@
+frank off
+for (var i = 0; i < 180; ++i){
+rotate y 1
+if (i < 10) {
+var filename = "CNT_frame_0000" + @i + ".png"
+} elseif (i > 9 && i < 100) {
+var filename = "CNT_frame_000" + @i + ".png"
+} else {
+var filename = "CNT_frame_00" + @i + ".png"
+}
+write image 550 500  PNG @filename
+}
+
+exitJmol
+

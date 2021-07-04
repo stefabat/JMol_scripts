@@ -1,0 +1,13 @@
+frank off
+set background white
+rotate x -45
+mo color yellow blue
+mo fill nomesh translucent
+for (var i = 66; i < 100; i++){
+mo @i
+var filename = "MO_" + @i + ".png"
+write image 2200 2000  PNG @filename
+}
+
+exitJmol
+

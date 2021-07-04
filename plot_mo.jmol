@@ -1,0 +1,32 @@
+
+set frank off
+set background white
+
+rotate y 90
+
+mo titleformat ""
+mo nomesh fill
+mo color blue red
+mo translucent 50
+mo resolution 10
+
+set ambientpercent 45
+set diffusepercent 90
+set specular true
+set specularpercent 40
+set specularpower 50
+set specularexponent 5
+
+connect (atomno=1) (atomno=2) hbond
+connect (atomno=1) (atomno=3) hbond
+hbonds 0.08
+
+mo 80
+write POVRAY "MO80.pov"
+
+mo 81
+write POVRAY "MO81.pov"
+
+mo 82
+write POVRAY "MO82.pov"
+
